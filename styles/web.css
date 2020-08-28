@@ -1,0 +1,140 @@
+/*? parallax */
+/* .parallax {
+  height: 100vh;
+} */
+.parallax {
+  height: 30vh;
+  width: 100vw;
+  background-image: url("../assets/webdev/parallax.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*? icon section */
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/webdev/parallax.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 650px) {
+  .icon-section {
+    flex-direction: column;
+  }
+}
+
+.icon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.icon-wrap img {
+  height: 200px;
+  width: 200px;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 1100px) {
+  .icon-wrap img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .icon-wrap img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .icon-wrap {
+    margin: 10px;
+  }
+  .icon-wrap img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .icon-wrap img {
+    height: 50px;
+    width: 50px;
+  }
+  .icon-wrap p {
+    font-size: 12px;
+  }
+}
+
+.icon-wrap p {
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px black;
+}
+
+/*? text section */
+
+.text-section {
+  display: flex;
+  background-color: #30323D;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-section {
+    flex-direction: column;
+    height: 200vh;
+  }
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.text-info h3 {
+  color: white;
+  font-size: 28px;
+}
+
+.text-info p{
+  color: #E8C547;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-info h3 {
+    font-size: 24px;
+  }
+  
+  .text-info p{
+    font-size: 15px;
+  }
+}
+
+.text-section img {
+  width: 50vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-section img {
+    width: 100vw;
+    height: 100vh;
+  }
+}

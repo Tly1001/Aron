@@ -1,0 +1,65 @@
+.parallax {
+  height: 20vh;
+  width: 100vw;
+  background-image: url("../assets/webdev/parallax.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-section {
+  display: flex;
+  background-color: #30323D;
+  height: 40vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-section {
+    height: 100vh;
+  }
+  .multi-media {
+    flex-direction: column;
+    height: 190vh;
+  }
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+
+.text-info h3 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+.text-info p{
+  color: #E8C547;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-info h3 {
+    font-size: 24px;
+  }
+  
+  .text-info p{
+    font-size: 15px;
+  }
+}
+
+.text-section img {
+  width: 30vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .text-section img {
+    width: 100vw;
+    height: 100vh;
+  }
+}

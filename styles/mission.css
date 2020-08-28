@@ -1,0 +1,197 @@
+.parallax {
+  height: 20vh;
+  width: 100vw;
+  background-image: url("../assets/webdev/parallax.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*? blog section */
+
+.blog {
+  height: 50vh;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog {
+    height: min-content;
+  }
+  .blog:first-of-type .blog-part {
+    padding-top: 15vh;
+  }
+}
+
+.blog-part {
+  display: flex;
+  background-color: #30323D;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog-part {
+    flex-direction: column;
+  }
+}
+
+.blog-part img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog-part img {
+    width: 100%;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.info h3 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+.info p {
+  color: #E8C547;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 950px) {
+  .info h3 {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info h3 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+}
+
+/*? icon section */
+.icon-section {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #30323D;
+}
+
+@media only screen and (max-width: 700px) {
+  .icon-section{
+    flex-direction: column;
+    height: 700px;
+  }
+}
+
+.icon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.icon-wrap img {
+  height: 100px;
+  width: 100px;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 700px) {
+  .icon-wrap {
+    margin: 20px;
+  }
+
+  .icon-wrap img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.icon-wrap p {
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px black;
+}
+
+/*? text section */
+
+
+.text-section {
+  display: flex;
+  background-color: #30323D;
+  height: 40vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .double-column{
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-info {
+    padding: 20px;
+  }
+}
+
+.text-info h3 {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+.text-info p{
+  color: #E8C547;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 950px) {
+  .text-info h3 {
+    font-size: 24px;
+  }
+
+  .text-info p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text-info h3 {
+    font-size: 20px;
+  }
+
+  .text-info p {
+    font-size: 12px;
+  }
+}
+
+.text-section img {
+  width: 30vw;
+}
